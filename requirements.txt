@@ -1,0 +1,20 @@
+# ─── Core API framework ───────────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+
+# ─── Vertex AI (preferred Gemini path on Cloud Run) ──────────────────────────
+# Install when deploying to GCP. Uses Application Default Credentials.
+google-cloud-aiplatform==1.73.0
+
+# ─── Fallback Gemini SDK (GEMINI_API_KEY env var path) ───────────────────────
+google-generativeai==0.8.3
+google-genai
+# ─── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1    # Load .env in local dev (not needed on Cloud Run)
+httpx==0.28.1           # Async HTTP client (useful for future integrations)
+
+# ─── Testing ──────────────────────────────────────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx                   # Already pinned above; used by TestClient
