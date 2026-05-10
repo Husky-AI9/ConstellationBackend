@@ -1,4 +1,4 @@
-# Team USA Hometown Signals & LA28 Momentum API
+# Team USA Constellation
 
 FastAPI backend for the Team USA Constellation Hub — Cloud Run deployable, Gemini-powered, parity-first.
 
